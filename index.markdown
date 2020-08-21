@@ -1,8 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: mana_index
 ---
-# asvasv
-[20200821.markdown]({{ site.baseurl }}/20200821)
+# Promotions
+{% for pagemap in site.data.pagemap %}
+  <li>
+    <a href="{{ pagemap.linkUrl }}">
+      <img src="{{ site.url }}/{{ pagemap.imageUrl }}" style="max-width:100%;height: auto;" />
+    </a>
+  </li>
+{% endfor %}

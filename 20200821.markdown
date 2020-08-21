@@ -1,5 +1,5 @@
 ---
-layout: 20200821
+layout: mana_page
 ---
 
 {{site.baseurl}}
@@ -10,5 +10,6 @@ layout: 20200821
 - asd
 - asd
   - asd
+
 
 
