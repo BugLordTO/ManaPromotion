@@ -4,7 +4,7 @@ layout: 20200821
 
 {{site.baseurl}}
 {{site.url}}
-![20200821.jpg](.{{ site.baseurl }}/images/20200821.jpg)
+![20200821.jpg]({{ site.url }}/images/20200821.jpg)
 # test file
 - asd
 - asd
