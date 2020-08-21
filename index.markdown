@@ -5,4 +5,4 @@
 layout: home
 ---
 # asvasv
-[20200821.markdown]({{ site.baseurl }}/20200821)
+[20200821.markdown](.{{ site.baseurl }}/20200821)
