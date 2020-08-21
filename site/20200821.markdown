@@ -1,7 +1,7 @@
 ---
 layout: 20200821
 ---
-![20200821.jpg](images/20200821.jpg)
+![20200821.jpg](/images/20200821.jpg)
 # test file
 - asd
 - asd
