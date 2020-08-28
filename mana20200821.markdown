@@ -1,15 +1,18 @@
 ---
 layout: mana_page
 ---
+{% assign pageData = site.data.pagemap | where:"linkUrl", "mana20200821" | first %}
 
-{{site.baseurl}}
-{{site.url}}
-<img src="{{ site.url }}/images/cp_banner_1.png" style="max-width:100%;height: auto;" />
-# test file
-- asd
-- asd
-- asd
-  - asd
+<img src="{{ site.url }}/{{pageData.imageUrl }}" style="max-width:100%;height: auto;" />
+{{ pageData.markdown | markdownify }}
+<button style="width:100%">แชร์</button>
 
-
-
+## รับคูปอง
+<div style="text-align:center">
+  {{ "### หมดเขต" | markdownify }}
+  {{ pageData.expired }}
+</div>
+<img src="{{ site.url }}/{{pageData.couponImage }}" style="max-width:100%;height: auto;" />
+<div style="text-align:right">
+  <button style="background-color:red;color:white;border:red" onclick="window.location='{{pageData.couponEndpoint}}';">กดรับคูปอง</button>
+</div>
