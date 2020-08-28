@@ -2,6 +2,11 @@
 layout: mana_index
 ---
 # Promotions
+
+{% for myimage in site.static_files %}
+  {{ myimage.path }}
+{% endfor %}
+สวัสดี
 {% for pagemap in site.data.pagemap %}
   <li>
     <a href="{{ site.url }}/{{ pagemap.linkUrl }}">

@@ -1,0 +1,15 @@
+---
+layout: mana_page
+---
+
+{{site.baseurl}}
+{{site.url}}
+<img src="{{ site.url }}/images/cp_banner_3.png" style="max-width:100%;height: auto;" />
+# test file
+- asd
+- asd
+- asd
+  - asd
+
+
+

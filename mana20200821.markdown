@@ -4,7 +4,7 @@ layout: mana_page
 
 {{site.baseurl}}
 {{site.url}}
-![20200821.jpg]({{ site.url }}/images/20200821.jpg)
+<img src="{{ site.url }}/images/cp_banner_1.png" style="max-width:100%;height: auto;" />
 # test file
 - asd
 - asd
