@@ -14,12 +14,12 @@
     </section>
 
     <script>
-      function sharePage() { 
+      function sharePage(title, text, url) { 
         if(navigator.share) {
           navigator.share({
-            title: 'mobiForge: Web Share API',
-            text: 'Check out this great article about the Web Share API',
-            url: 'https://mobiforge.com/design-development/web-share-api'
+            title: title,
+            text: text,
+            url: url
           });
         }
       }
