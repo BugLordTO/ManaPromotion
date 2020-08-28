@@ -5,7 +5,7 @@ layout: mana_page
 
 <img src="{{ site.url }}/{{pageData.imageUrl }}" style="max-width:100%;height: auto;" />
 {{ pageData.markdown | markdownify }}
-<button style="width:100%" onclick="sharePage('{{pageData.title}}', '{{ pageData.text | markdownify }}', '{{ site.url }}/{{ pageData.linkUrl }}')">แชร์</button>
+<button style="width:100%" onclick="sharePage('{{pageData.title}}', '{{ pageData.text }}', '{{ site.url }}/{{ pageData.linkUrl }}')">แชร์</button>
 
 ## รับคูปอง
 <div style="text-align:center">
