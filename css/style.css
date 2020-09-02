@@ -1,7 +1,33 @@
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://fonts.googleapis.com/css?family=Kanit:300&amp;subset=thai');
+}
+body{
+    background-color: #ECEBF1;
+    margin:unset;
+}
+
 * {
     font-family: 'Kanit', sans-serif;
 }
 
 .text-red{
     color:red;
+}
+
+.content-white{
+    padding: 8px;
+    background: white;
+}
+
+.banner{
+    border-radius: 6px;
+    max-width:100%;
+    height: auto;
+}
+
+.margin-top{
+    margin-top:8px;
 }
