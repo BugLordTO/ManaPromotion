@@ -1,7 +1,7 @@
 ---
 layout: mana_page
 ---
-{% assign pageData = site.data.pagemap | where:"share.url", "mana20200823" | first %}
+{% assign pageData = site.data.pagemap | where:"share.url", "template" | first %}
 
 <img src="{{ site.url }}/{{pageData.banner }}" style="max-width:100%;height: auto;" />
 {{ pageData.details | markdownify }}

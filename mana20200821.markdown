@@ -1,18 +1,18 @@
 ---
 layout: mana_page
 ---
-{% assign pageData = site.data.pagemap | where:"linkUrl", "mana20200821" | first %}
+{% assign pageData = site.data.pagemap | where:"share.url", "mana20200821" | first %}
 
-<img src="{{ site.url }}/{{pageData.imageUrl }}" style="max-width:100%;height: auto;" />
-{{ pageData.markdown | markdownify }}
-<button style="width:100%" onclick="sharePage('{{pageData.title}}', '{{ pageData.text }}', '{{ site.url }}/{{ pageData.linkUrl }}')">แชร์</button>
+<img src="{{ site.url }}/{{pageData.banner }}" style="max-width:100%;height: auto;" />
+{{ pageData.details | markdownify }}
+<button style="width:100%" onclick="sharePage('{{pageData.share.title}}', '{{ pageData.share.text }}', '{{ site.url }}/{{ pageData.share.url }}')">แชร์</button>
 
 ## รับคูปอง
 <div style="text-align:center">
   {{ "### หมดเขต" | markdownify }}
   {{ pageData.expired }}
 </div>
-<img src="{{ site.url }}/{{pageData.couponImage }}" style="max-width:100%;height: auto;" />
+<img src="{{ site.url }}/{{pageData.couponBanner }}" style="max-width:100%;height: auto;" />
 <div style="text-align:right">
   <button style="background-color:red;color:white;border:red" onclick="window.location='{{pageData.couponEndpoint}}';">กดรับคูปอง</button>
 </div>
