@@ -1,28 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>โปรโมชัน</title>
-    <link rel="stylesheet" href="{{ site.url }}/css/style.css">
-  </head>
-  <body>
-      <div>
-        {{ content }}
-      </div>
 
-    <script>
-      function sharePage(title, text, url) { 
-        if(navigator.share) {
-          navigator.share({
-            title: title,
-            text: text,
-            url: url
-          });
-        }
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>โปรโมชัน</title>
+  <link rel="stylesheet" href="{{ site.url }}/css/style.css">
+</head>
+
+<body style="visibility: visible;">
+  <div>
+    {{ content }}
+  </div>
+
+  <script>
+    if (navigator.share) {
+      var btns = document.getElementsByClassName("btn-on-android");
+      console.log(btns);
+      btns.forEach(function (item) {
+        item.style.visibility = "visible";
+      });
+    } else {
+      var btns = document.getElementsByClassName("btn-on-web");
+      console.log(btns);
+      Array.prototype.forEach.call(btns, function (item) {
+        console.log(item);
+        item.style.visibility = "visible";
+      });
+    }
+
+    function sharePage(title, text, url) {
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: text,
+          url: url
+        });
       }
-      </script>
-      <script src="{{ site.url }}/scripts/manalib.js"></script>
-  </body>
+    }
+  </script>
+  <script src="{{ site.url }}/scripts/manalib.js"></script>
+</body>
+
 </html>

@@ -6,7 +6,9 @@ layout: mana_page
 <div class="content-white padding">
   <img src="{{ site.url }}/{{pageData.banner }}" class="banner border-radius" />
   {{ pageData.details | markdownify }}
-  <button class="btn-share margin-vertical" onclick="sharePage('{{pageData.share.title}}', '{{ pageData.share.text }}', '{{ site.url }}/{{ pageData.share.url }}')">แชร์</button>
+  <button class="btn-share margin-vertical btn-on-android" onclick="sharePage('{{pageData.share.title}}', '{{ pageData.share.text }}', '{{ site.url }}/{{ pageData.share.url }}')" style="visibility:hidden">แชร์ android</button>
+  <button class="btn-share margin-vertical btn-on-web" onclick="sharePage('{{pageData.share.title}}', '{{ pageData.share.text }}', '{{ site.url }}/{{ pageData.share.url }}')" style="visibility:hidden">แชร์ web</button>
+  <button class="btn-share margin-vertical btn-on-ios" onclick="sharePage('{{pageData.share.title}}', '{{ pageData.share.text }}', '{{ site.url }}/{{ pageData.share.url }}')" style="visibility:hidden">แชร์ iOS</button>
 </div>
 
 <div class="padding">
