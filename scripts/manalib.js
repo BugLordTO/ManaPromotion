@@ -1,12 +1,12 @@
 var mcontentid = '637335741737853687';
 
-$(() => {
+(function() {
     setTimeout(() => {
         try {
             initPageApi(mcontentid).then(_ => { });
         } catch (ex) { alert(ex); }
     }, 1000);
-});
+ })();
 
 function initPageApi(mcontentid) {
     return new Promise((resolve, reject) => {
