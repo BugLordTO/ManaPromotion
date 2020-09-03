@@ -4,8 +4,8 @@ var mcontentid = '637335741737853687';
     setTimeout(() => {
         try {
             initPageApi(mcontentid).then(_ => { });
-        } catch (ex) { alert(ex); }
-    }, 1000);
+        } catch (ex) { console.log(ex); }
+    }, 1500);
  })();
 
 function initPageApi(mcontentid) {
@@ -14,7 +14,7 @@ function initPageApi(mcontentid) {
             TheSHybridFunc("initPageApi", mcontentid, resolve);
         } catch (ex) {
             reject(ex);
-            alert(ex);
+            console.log(ex);
         }
     });
 }
@@ -24,6 +24,6 @@ function visitEndpoint(mcontentid, url) {
         TheSHybridFunc("visitEndpoint", JSON.stringify({ mcid: mcontentid, url: url }), r => resolve(r));
     } catch (ex) {
         reject(ex);
-        alert(ex);
+        console.log(ex);
     }
 }
