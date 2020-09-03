@@ -17,15 +17,12 @@
   <script>
     if (navigator.share) {
       var btns = document.getElementsByClassName("btn-on-android");
-      console.log(btns);
-      btns.forEach(function (item) {
+      Array.prototype.forEach.call(btns, function (item) {
         item.style.display = "initial";
       });
     } else {
       var btns = document.getElementsByClassName("btn-on-web");
-      console.log(btns);
       Array.prototype.forEach.call(btns, function (item) {
-        console.log(item);
         item.style.display = "initial";
       });
     }
