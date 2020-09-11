@@ -19,10 +19,8 @@
     var lib;
 
     (async function () {
-      setTimeout(async () => {
-        lib = await manawallib.GetLib();
-        await lib.initPageApiWithCallBack(mcontentid, () => callBackFunc());
-      }, 500);
+      lib = await manawallib.GetLib();
+      await lib.initPageApiWithCallBack(mcontentid, () => callBackFunc());
     })();
   </script>
 </body>
