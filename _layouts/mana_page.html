@@ -14,7 +14,18 @@
     {{ content }}
   </div>
 
+  <script src="{{ site.url }}/scripts/java-m-lib/dist/bundle.js"></script>
   <script>
+    var mcontentid = "637335741737853687";
+    var lib;
+
+    (function () {
+      setTimeout(() => {
+        lib = await manawallib.GetLib();
+        await lib.initPageApiWithCallBack(mcontentId, () => callBackFunc());
+      }, 500);
+    })();
+
     if (navigator.share) {
       var btns = document.getElementsByClassName("btn-on-android");
       Array.prototype.forEach.call(btns, function (item) {
@@ -37,7 +48,6 @@
       }
     }
   </script>
-  <script src="{{ site.url }}/scripts/manalib.js"></script>
 </body>
 
 </html>

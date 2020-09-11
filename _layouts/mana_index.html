@@ -11,6 +11,17 @@
       <div class="content-white padding margin-top">
         {{ content }}
       </div>
-      <script src="{{ site.url }}/scripts/manalib.js"></script>
+      <script src="{{ site.url }}/scripts/java-m-lib/dist/bundle.js"></script>
+      <script>
+        var mcontentid = "637335741737853687";
+        var lib;
+    
+        (function () {
+          setTimeout(() => {
+            lib = await manawallib.GetLib();
+            await lib.initPageApiWithCallBack(mcontentId, () => callBackFunc());
+          }, 500);
+        })();
+      </script>
   </body>
 </html>
