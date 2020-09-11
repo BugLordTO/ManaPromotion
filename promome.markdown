@@ -23,7 +23,7 @@ layout: mana_page
 <div class="content-white padding border-radius">
   <img src="{{ site.url }}/{{pageData.couponBanner }}" class="banner"/>
   <div class="text-right">
-    <button class="btn-red" onclick="visitEndpoint(mcontentid, '{{pageData.couponEndpoint}}'); ">กดรับคูปอง</button>
+    <button class="btn-red" onclick="lib.visitEndpoint(mcontentid, '{{pageData.couponEndpoint}}'); ">กดรับคูปอง</button>
   </div>
 </div>
 
