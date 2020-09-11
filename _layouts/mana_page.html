@@ -19,10 +19,10 @@
     var mcontentid = "637335741737853687";
     var lib;
 
-    (function () {
-      setTimeout(() => {
+    (async function () {
+      setTimeout(async () => {
         lib = await manawallib.GetLib();
-        await lib.initPageApiWithCallBack(mcontentId, () => callBackFunc());
+        await lib.initPageApiWithCallBack(mcontentid, () => callBackFunc());
       }, 500);
     })();
 

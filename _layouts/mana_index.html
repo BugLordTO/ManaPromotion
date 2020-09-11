@@ -1,27 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>โปรโมชัน</title>
-    <link rel="stylesheet" href="{{ site.url }}/css/style.css">
-  </head>
-  <body>
-      <div class="content-white padding margin-top">
-        {{ content }}
-      </div>
-      <script src="{{ site.url }}/scripts/java-m-lib/dist/bundle.js"></script>
-      <script>
-        var mcontentid = "637335741737853687";
-        var lib;
-    
-        (function () {
-          setTimeout(() => {
-            lib = await manawallib.GetLib();
-            await lib.initPageApiWithCallBack(mcontentId, () => callBackFunc());
-          }, 500);
-        })();
-      </script>
-  </body>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>โปรโมชัน</title>
+  <link rel="stylesheet" href="{{ site.url }}/css/style.css">
+</head>
+
+<body>
+  <div class="content-white padding margin-top">
+    {{ content }}
+  </div>
+  <script src="{{ site.url }}/scripts/java-m-lib/dist/bundle.js"></script>
+  <script>
+    var mcontentid = "637335741737853687";
+    var lib;
+
+    (async function () {
+      setTimeout(async () => {
+        lib = await manawallib.GetLib();
+        await lib.initPageApiWithCallBack(mcontentid, () => callBackFunc());
+      }, 500);
+    })();
+  </script>
+</body>
+
 </html>
