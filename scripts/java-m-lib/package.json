@@ -1,8 +1,8 @@
 {
   "_from": "java-m-lib",
-  "_id": "java-m-lib@0.0.25",
+  "_id": "java-m-lib@0.0.26",
   "_inBundle": false,
-  "_integrity": "sha512-ns+V/JYZAmQZBp33H70QK+19Uv2eihKeAyjrM8dAcaMDjNpLtC8euOkXJt7oQ8fnnTt8WMmq9aracbyKS14RWw==",
+  "_integrity": "sha512-BaUKgFeCOhCWYNG9lD72HQAJLoMIVYnWBex/CmiPVKA8s7jruRudPHdeQytRjb6/EkL42arYknhnR4ayxSYAdw==",
   "_location": "/java-m-lib",
   "_phantomChildren": {},
   "_requested": {
@@ -19,8 +19,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/java-m-lib/-/java-m-lib-0.0.25.tgz",
-  "_shasum": "b2f908c993c0d69abd1c88bea0739422e57336b6",
+  "_resolved": "https://registry.npmjs.org/java-m-lib/-/java-m-lib-0.0.26.tgz",
+  "_shasum": "3736d19e545cbfb706aabccbd0a6e33d0f362743",
   "_spec": "java-m-lib",
   "_where": "C:\\git\\ManaPromotion",
   "author": {
@@ -58,5 +58,5 @@
     "prepublish": "npx webpack",
     "test": "jasmine-ts"
   },
-  "version": "0.0.25"
+  "version": "0.0.26"
 }
