@@ -1,4 +1,4 @@
 {
     "shareBaseUrl": "https://sharemlink.azurewebsites.net",
-    "manaApiBaseUrl": "https://mana-facing-dev.azurewebsites.net"
+    "manaApiBaseUrl": "https://mana-gateway-dev.azurewebsites.net"
 }
