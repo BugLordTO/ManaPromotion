@@ -6,7 +6,7 @@ layout: mana_page
 <div class="content-white padding">
   <img src="{{ site.url }}/{{pageData.banner }}" class="banner border-radius" />
   {{ pageData.details | markdownify }}
-  <button class="btn-share margin-vertical" onclick="window.location='{{ site.data.settings.shareBaseUrl }}?uri={{ site.url }}/{{ pageData.share.url }}'">แชร์</button>
+  <button class="btn-share margin-vertical" onclick="window.location='{{ site.data.settings.shareBaseUrl }}?uri={{ site.data.settings.manaApiBaseUrl }}/mcontent/{{ pageData.mContentId }}'">แชร์</button>
 </div>
 
 <div class="padding">
